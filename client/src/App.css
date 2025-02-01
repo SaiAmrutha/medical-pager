@@ -200,12 +200,16 @@ body {
 }
 
 .str-chat-channel-list {
-  height: fit-content;
+  /* height: fit-content; */
+  height: 20px;
   margin-bottom: 8px;
+  border: 5px;
+  border-color: magenta;
 }
 
 .str-chat-channel {
-  height: 100%;
+  /* height: 100%; */
+  height: 10%;
 }
 
 .str-chat__load-more-button {
@@ -378,6 +382,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   padding: 20px 0;
   flex-shrink: 0;
   /* height: 100vh; */
@@ -412,11 +417,11 @@ body {
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: center; */
-  padding-left: 20px;
   background: var(--primary-color);
-  border: 2px solid brown;
   width: 200px;
   height: 100vh;
+  padding-left: 20px;
+  border: 2px solid brown;
 }
 
 .icon1__inner {
@@ -454,9 +459,12 @@ body {
 
 .channel-list__header {
   /* padding: 16px; */
-  height: 62px;
+  padding-left: 16px;
+  height: 42px;
   background-color: purple;
   width: 170px;
+  /* new */
+  align-items: center;
 }
 
 .channel-list__header__text {
@@ -464,7 +472,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 28px;
+  line-height: 40px;
   width: 170px;
   /* color: #ffffff; */
   color: #000;
@@ -473,24 +481,23 @@ body {
 }
 
 .channel-search__container {
-  position: relative;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  position: relative;
   padding-top: 16px;
   border-top: 1px solid #00000033;
 }
 
 .channel-search__input__wrapper {
   display: flex;
-  justify-content: center;
   align-items: center;
   height: 40px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 8px;
   margin-bottom: 8px;
   border: 1px solid transparent;
-  width: 95%;
+  width: 170px;
 }
 
 .channel-search__input__wrapper:focus-within {
@@ -1807,7 +1814,14 @@ div.rta__autocomplete.str-chat__emojisearch {
   }
 
   .channel-list__list__wrapper {
-    width: 100%;
+    /* width: 100%; */
+    width: 300px;
+    background: linear-gradient(180deg, #005fff, #0033cc);
+    height: 100vh;
+    padding: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
   }
 
   .channerl-list__container-toggle {
